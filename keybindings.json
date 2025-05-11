@@ -1,0 +1,22 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+j ctrl+s",
+    "command": "json.sort"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Create styled.ts file"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Create index.ts file"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Create Component"
+  }
+]
