@@ -1,0 +1,73 @@
+{
+  "React Default Function Component": {
+    "prefix": "rfd",
+    "body": [
+      "export default (): JSX.Element => {",
+      "  return <div>${TM_FILENAME_BASE}</div>;",
+      "};"
+    ],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "React Functional Component with TypeScript": {
+    "prefix": "ci",
+    "body": [
+      "import React, { FC } from \"react\";",
+      "",
+      "interface IProps {",
+      "  $1",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE}: FC<IProps> = ({ $2 }) => {",
+      "  return (",
+      "    <div>",
+      "      $3",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "React Functional Component with TypeScript"
+  },
+  "Own Enum export": {
+    "prefix": "exen",
+    "body": ["export enum $1 {$2}"],
+    "description": "Creates an exported TypeScript Enum"
+  },
+  "Own Interface": {
+    "prefix": "inte",
+    "body": ["interface I$1 {", "$2", "}", ""],
+    "description": "Creates a Interface"
+  },
+  "Own IProps Interface": {
+    "prefix": "prop",
+    "body": ["interface IProps {", "$2", "}", ""],
+    "description": "Creates a IProps Interface"
+  },
+  "Own Selector": {
+    "prefix": "sele",
+    "body": ["const $1 = useSelector(selectors.$2)"],
+    "description": "Creates a Redux Selector call"
+  },
+  "Own Memo": {
+    "prefix": "meme",
+    "body": ["const $1 = React.useMemo(() => $2,[$3])"],
+    "description": "Creates a Memo"
+  },
+  "Own State": {
+    "prefix": "ust",
+    "body": ["const [$1, use$2] = React.useState<$3>($4)"],
+    "description": "Creates a React State hook call"
+  },
+  "Own Effect": {
+    "prefix": "eff",
+    "body": ["React.useEffect(() => {", "  $1", "},[$2])"],
+    "description": "Creates a React Effect hook call"
+  },
+  "Translations hook": {
+    "prefix": "tra",
+    "body": [
+      "import { useTranslation } from 'react-i18next';",
+      "const {t, i18n} = useTranslation()"
+    ],
+    "description": "Creates an i18n Translations hook call"
+  }
+}
