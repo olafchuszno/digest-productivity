@@ -1,0 +1,91 @@
+{
+  "Enum export": {
+    "prefix": "exen",
+    "body": ["export enum $1 {$2}"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Interface": {
+    "prefix": "ifc",
+    "body": ["export enum $1 {$2}"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Interface export": {
+    "prefix": "exint",
+    "body": ["export interface I$1 {", "$2", "}", ""],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Own Interface": {
+    "prefix": "inte",
+    "body": ["interface I$1 {", "$2", "}", ""],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Util function with export": {
+    "prefix": "exut",
+    "body": ["export const ${TM_FILENAME_BASE} = () => {$1}"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Util function with export, interface and props": {
+    "prefix": "exutprop",
+    "body": [
+      "interface IProps {}",
+      "interface I$1 {}",
+      "export const ${TM_FILENAME_BASE} = ({}: IProps):I$1 => {$2}"
+    ],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Export styled component": {
+    "prefix": "exst",
+    "body": ["export const $1 = styled.div`", "$2`;"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Own Memo": {
+    "prefix": "meme",
+    "body": ["const $1 = React.useMemo(() => $2,[$3])"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Own State": {
+    "prefix": "ust",
+    "body": ["const [$1, use$2] = React.useState<$3>($4)"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Own Effect": {
+    "prefix": "eff",
+    "body": ["React.useEffect(() => {", "  $1", "},[$2])"],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Own Selector": {
+    "prefix": "sele",
+    "body": ["const $1 = useSelector(selectors.$2)"],
+    "description": "Creates a Redux Selector call"
+  },
+  "Translations hook": {
+    "prefix": "tra",
+    "body": [
+      "import { useTranslation } from 'react-i18next';",
+      "const {t, i18n} = useTranslation()"
+    ],
+    "description": "Creates a default React Function Component with dynamic file name"
+  },
+  "Styled Flex Div": {
+    "prefix": "flexdiv",
+    "body": [
+      "export const $1 = styled.div`",
+      "display: flex;",
+      "align-items: center;",
+      "gap: 32px;",
+      "`"
+    ],
+    "description": "Creates a Redux Selector call"
+  },
+  "Styled Div": {
+    "prefix": "styd",
+    "body": [
+      "export const $1 = styled.div`",
+      "display: flex;",
+      "align-items: center;",
+      "gap: 32px;",
+      "`"
+    ],
+    "description": "Creates a Redux Selector call"
+  }
+}
