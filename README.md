@@ -1,1 +1,1 @@
-Welcome to DIgest Productivity Repository!
+Welcome to Digest Productivity Repository!
