@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create styled.ts file",
+      "type": "shell",
+      "command": "node",
+      "args": ["/Users/seiz/scripts/createStyledFile.js", "${file}"],
+      "problemMatcher": [],
+      "group": "build",
+      "detail": "Creates a styled.ts file in the same directory as the currently open file."
+    },
+    {
+      "label": "Create index.ts file",
+      "type": "shell",
+      "command": "node",
+      "args": ["/Users/seiz/scripts/createIndexFile.js", "${file}"],
+      "problemMatcher": [],
+      "group": "build",
+      "detail": "Creates a index.ts file in the same directory as the currently open file."
+    },
+    {
+      "label": "Create Component",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "/Users/seiz/scripts/createComponent.js",
+        "${fileDirname}",
+        "${input:componentName}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "componentName",
+      "type": "promptString",
+      "description": "Enter component name",
+      "default": "NewComponent"
+    }
+  ]
+}
