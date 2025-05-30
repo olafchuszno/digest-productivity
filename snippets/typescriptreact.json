@@ -1,9 +1,26 @@
 {
+  "React Component with Styled and Utils": {
+    "prefix": "dhc",
+    "body": [
+      "//core",
+      "import React from 'react'",
+      "//components",
+      "import * as S from './styled';",
+      "//other",
+      "",
+      "interface IProps { $1 }",
+      "",
+      "export const ${TM_FILENAME_BASE}: React.FC<IProps> = ({ $1 }) => {",
+      "  return <div>$2</div>;",
+      "};"
+    ],
+    "description": "Scaffold a React component using the file name as the component name"
+  },
   "React Default Function Component": {
     "prefix": "rfd",
     "body": [
       "export default (): JSX.Element => {",
-      "  return <div>${TM_FILENAME_BASE}</div>;",
+      " return <div>${TM_FILENAME_BASE}</div>;",
       "};"
     ],
     "description": "Creates a default React Function Component with dynamic file name"
@@ -14,15 +31,15 @@
       "import React, { FC } from \"react\";",
       "",
       "interface IProps {",
-      "  $1",
+      " $1",
       "}",
       "",
       "export const ${TM_FILENAME_BASE}: FC<IProps> = ({ $2 }) => {",
-      "  return (",
-      "    <div>",
-      "      $3",
-      "    </div>",
-      "  );",
+      " return (",
+      " <div>",
+      " $3",
+      " </div>",
+      " );",
       "};"
     ],
     "description": "React Functional Component with TypeScript"
@@ -59,7 +76,7 @@
   },
   "Own Effect": {
     "prefix": "eff",
-    "body": ["React.useEffect(() => {", "  $1", "},[$2])"],
+    "body": ["React.useEffect(() => {", " $1", "},[$2])"],
     "description": "Creates a React Effect hook call"
   },
   "Translations hook": {
